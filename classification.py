@@ -182,7 +182,7 @@ def naive_bayes_model(X_train, X_test, y_train, y_test):
     y_pred_nb = nb_model.predict(X_test)
 
     # evaluate Naive Bayes model
-    print("\nSVM Model Results:")
+    print("\nNaive Bayes Model Results:")
     print(f"Accuracy: {accuracy_score(y_test, y_pred_nb) * 100}%")
     print(f"Precision: {precision_score(y_test, y_pred_nb) * 100}%")
     print(f"Confusion Matrix:\n{confusion_matrix(y_test, y_pred_nb)}")
